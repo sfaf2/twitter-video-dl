@@ -98,7 +98,7 @@ def search_json(j, target_key, result):
         for item in j:
             search_json(item, target_key, result)
 
-    return 
+    return result
 
 def download_image(image_url, file_name):
     image_ids = re.findall("status/([0-9]+)", image_url)
